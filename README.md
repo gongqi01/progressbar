@@ -1,3 +1,3 @@
-Progress Bar by Joseph Lin
+Progress bar created by Joseph Lin.
 
-This is a fashion progress bar.
+This is a simple but fashional progress bar by Ractive.js.
