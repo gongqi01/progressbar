@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Progress Bar</title>
+  <link href="css/progress.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1>Click the button to change the progress bar.</h1>
+  
+  <label>Bar 1</label><div id='container1'></div>
+  <label>Bar 2</label><div id='container2'></div>
+  <label>Bar 3</label><div id='container3'></div>
+  <select id="sbar">
+  	<option value="1">Bar 1</option>
+  	<option value="2">Bar 2</option>
+  	<option value="3">Bar 3</option>
+  </select>
+  <button name="operateButton" value="+25">+25</button> 
+  <button name="operateButton" value="+10">+10</button> 
+  <button name="operateButton" value="-10">-10</button> 
+  <button name="operateButton" value="-25">-25</button>
+
+  <script id='template' type='text/ractive'>
+  
+		<div class="progress-bar">
+    	<div class="progress-bar-fill" style="width: {{progress}}%" id="{{barid}}">
+      	<span class="progress-label"><a>{{progress}}%</a></span>
+    	</div>
+  
+    	
+  	</div>
+  	<br/>
+  </script>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+	<script src='js/progress.js'></script>
+
+</body>
+</html>
