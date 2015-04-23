@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Progress Bar</title>
+  <link href="css/progress.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1>Progress bar.</h1>
+  <p>Slide or click to adjust the progress (Maximum value is 200%).</p>
+  
+  <div id='container'></div>
+  <div id='container2'></div>
+  <div id='container3'></div>
+
+
+  <script id='template' type='text/ractive'>
+  
+		<div class="progress-bar">
+    	<div class="progress-bar-fill" style="width: {{progress}}%">
+      	<span class="progress-label"><a>{{progress}}%</a></span>
+    	</div>
+  
+    	<input tabindex="0" type="range" min="0" max="200"
+      	on-input="seek" disabled="{{readonly}}" value="{{progress}}" step="1" />
+  	</div>
+  	<br/>
+  </script>
+  
+  
+  <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+	<script src='js/progress.js'></script>
+
+</body>
+</html>

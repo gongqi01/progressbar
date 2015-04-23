@@ -1,0 +1,30 @@
+.progress-bar {
+  position: relative;
+  width: 500px;
+  height: 20px;
+  border: 1px solid black;
+  
+}
+.progress-bar-fill {
+  height: inherit;
+  background-color: orange;
+  text-align: center;
+}
+.progress-label a {
+  position: relative;
+  top: 3px;
+  left: 5px;
+  color: #000;
+  
+}
+
+input[type=range] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  cursor: pointer;
+  /* essentially making range slider invisible */
+  opacity: 0;
+}
